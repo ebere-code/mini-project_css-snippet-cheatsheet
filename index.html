@@ -7,116 +7,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
+
 <body>
     <header>
      <h1>CSS Sniippet Cheatsheet</h1> 
-     <p class="code">Having trouble recalling the exact syntax of your favourit CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy. </p>  
+     <p>Having trouble recalling the exact syntax of your favourit CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy. </p>  
     </header>
 
     <main>
-        <div class="snippet">
-            <section class="card">
-                <h2>Flexbow Row</h2>
-                <p>
-                    Use these three properties to create a Flexbox
-                    row layout.
-                </p>
+        <section class="card">
+            <h2>Flexbow Row</h2>
+            <p>
+                Use these three properties to create a Flexbox
+                row layout.
+            </p>
 
-                <div class="code">
-                    <p>.row {</p>
-                    <p class="dent1">display: flex;</p>
-                    <p class="dent1">flex-direction: row;</p>
-                    <p class="dent1">flex-wrap: wrap;</p>
-                    <p>}</p>
-                </div>
-                
-            </section>
+            <div class="code">
+                <p>.row {</p>
+                <p class="dent1">display: flex;</p>
+                <p class="dent1">flex-direction: row;</p>
+                <p class="dent1">flex-wrap: wrap;</p>
+                <p>}</p>
+            </div>
+            
+        </section>
+
+        <section class="card">
+            <h2>Flexbow Column</h2>
+            <p>
+                Use this to create a Flexbox column layout.
+            </p>
+
+            <div class="code">
+                <p>.column {</p>
+                <p class="dent1">display: flex;</p>
+                <p class="dent1">flex-direction: column;</p>
+                <p>}</p>
+            </div>
+            
+        </section>
+
+        <section class="card">
+            <h2>CSS Grid Layout</h2>
+            <p>
+                Build a 12-column layout using CSS Grid
+            </p>
+
+            <div class="code">
+                <p>.grid {</p>
+                <p class="dent1">display: grid;</p>
+                <p class="dent1">grid-template-columns: repeat (12, 1fr) ;</p>
+                <p class="dent1">width: 100%;</p>
+                <p>}</p>
+            </div>
+            
+        </section>
+
+        <section class="card">
+            <h2>Linear Gradients</h2>
+            <p>
+                This will create a background linear gradient from top to bottom.
+            </p>
+
+            <div class="code">
+                <p>.linear-gradient-background {</p>
+                <p class="dent1">background-image: linear-gradient (</p>
+                <p class="dent2">rgba(232, 102, 236, 0.3) 0%,</p>
+                <p class="dent2">rgba(232, 102, 236, 0.6) 100%</p>
+                <p class="dent1">);</p>
+                <p>}</p>
+            </div>
     
-            <section class="card">
-                <h2>Flexbow Column</h2>
-                <p>
-                    Use this to create a Flexbox column layout.
-                </p>
+        </section>
 
-                <div class="code">
-                    <p>.column {</p>
-                    <p class="dent1">display: flex;</p>
-                    <p class="dent1">flex-direction: column;</p>
-                    <p>}</p>
-                </div>
-                
-            </section>
-    
-            <section class="card">
-                <h2>CSS Grid Layout</h2>
-                <p>
-                    Build a 12-column layout using CSS Grid
-                </p>
+        <section class="card">
+            <h2>Box Transition Glow</h2>
+            <p>
+                Use transition and box shadows to glow on hover
+            </p>
 
-                <div class="code">
-                    <p>.grid {</p>
-                    <p class="dent1">display: grid;</p>
-                    <p class="dent1">grid-template-columns: repeat (12, 1fr) ;</p>
-                    <p class="dent1">width: 100%;</p>
-                    <p>}</p>
-                </div>
-                
-            </section>
-    
-            <section class="card">
-                <h2>Linear Gradients</h2>
-                <p>
-                    This will create a background linear gradient from top to bottom.
-                </p>
+            <div class="code">
+                <p>.code-card .card-header {</p>
+                <p class="dent1">border-radius: 8px;</p>
+                <p class="dent1">transition: all 0.5s ease-in-out;</p>
+                <p>}</p>
+                <br>
+                <p>.code-card: hover, .code-card : hover .card-header {</p>
+                <p class="dent1">box-shadow: inset 0px 0px 8px (</p>
+                <p class="dent2">rgba(232, 102, 236, 1), 0 0 15px</p>
+                <p class="dent2">rgba(232, 102, 236, 1);</p>
+                <p class="dent1">)</p>
+                <p>}</p>
+            </div>
+            
+        </section>
 
-                <div class="code">
-                    <p>.linear-gradient-background {</p>
-                    <p class="dent1">background-image: linear-gradient (</p>
-                    <p class="dent2">rgba(232, 102, 236, 0.3) 0%,</p>
-                    <p class="dent2">rgba(232, 102, 236, 0.6) 100%</p>
-                    <p class="dent1">);</p>
-                    <p>}</p>
-                </div>
-        
-            </section>
-    
-            <section class="card">
-                <h2>Box Transition Glow</h2>
-                <p>
-                    Use transition and box shadows to glow on hover
-                </p>
+        <section class="card">
+            <h2>Overlay Card with Title</h2>
+            <p>
+                Use position properties and negative margins to raise elements higher than their natural starting point.
+            </p>
 
-                <div class="code">
-                    <p>.code-card .card-header {</p>
-                    <p class="dent1">border-radius: 8px;</p>
-                    <p class="dent1">transition: all 0.5s ease-in-out:</p>
-                    <p>}</p>
-                    <br>
-                    <p>.code-card: hover, .code-card : hover .card-header {</p>
-                    <p class="dent1">box-shadow: inset 0px 0px 8px (</p>
-                    <p class="dent2">rgba(232, 102, 236, 1), 0 0 15px</p>
-                    <p class="dent2">rgba(232, 102, 236, 1);</p>
-                    <p>}</p>
-                </div>
-                
-            </section>
-    
-            <section class="card">
-                <h2>Overlay Crad with Title</h2>
-                <p>
-                    Use position properties and negative margins to raise elements higher than their natural starting point.
-                </p>
+            <div class="code">
+                <p>.card-header {</p>
+                <p class="dent1">position: relative;</p>
+                <p class="dent1">margin-top: -20px;</p>
+                <p>}</p>
+            </div>
 
-                <div class="code">
-                    <p>.card-header {</p>
-                    <p class="dent1">position: relative;</p>
-                    <p class="dent1">margin-top: -20px;</p>
-                    <p>}</p>
-                </div>
+        </section>
 
-            </section>
-
-        </div>
     </main>
 
     <footer>

@@ -1,39 +1,62 @@
 :root {
-    /* --dark: #000000; */
     --light: #fff;
     --box: rgb(255, 226, 59); 
+    --dark: #15163d;
 }
 
 * {
-    /* text-align: center; */
-    background: #15163d;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #15163d; 
 }
 
-main {
+/* main {
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
 
 body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: var(--light);
+    text-align: center;
+    font-size: large;
+    /* display: grid;
+    grid-template-columns: repeat (12, 1fr) ;
+    width: 100%; */
+    
 }
 
 .card {
     text-align: center;
-    min-height: 150px;
-    width: 100%;
+    /* min-height: 150px; */
+    width: 29%;
     border-style: dashed;
     /* border-width: 1px; */
     /* border-radius: 10px; */
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 60px;
+    /* background-color: var(--box); */
     /* flex: 1 0 400px; */
     display: inline-block;
+    /* width: 80%; */
+    /* min-height: 300px; */
+    /* margin: 0 auto; */
+    /* display: -webkit-flex; Safari      */
+    /* display: flex; Standard syntax */
+    /* position: relative; */
     /* display:flex;
-    flex-direction: column; */
+    flex-direction: column; 
+    flex-wrap: wrap; */
+    /* flex: 0 0 400px ; */
 }
+
+/* .card:nth-of-type(3n) {
+    margin-right: 0;	
+}
+
+.card:nth-of-type(3n+1) {
+    margin-left: 0;	
+} */
 
 .dent1 {
     margin-left: 30px;
@@ -53,15 +76,56 @@ body {
 }
 
 .code {
+    /* border-radius: 10px;
+    border-color: aqua; */
+    border: 10px;
     text-align:left;
-    list-style:none;
-    text-indent: 5px;
-    /* background-color: var(--box); */
+    font-family: 'Courier New', Courier, monospace;
+    /* text-indent: 5px; */
+    display: block;
+    /* position: relative; */
+    background-color: var(--box);
+    background-image: linear-gradient (
+
+        rgba(255, 226, 59, 0.356) 0%,
+
+        rgba(255, 226, 59, 0.979) 100%
+    )
     /* padding-left: 30px; */
+}
+
+.code p{
+    background-color: var(--box);
+    color: var(--dark); 
+    /* position: absolute; */
+    /* border-radius: 10px; */
+    /* width: 80%;
+    height: 30% */
+    background-image: linear-gradient (
+
+    rgb(255, 226, 59) 0%,
+
+    rgb(255, 226, 59) 100%
+    )
 }
 
 footer {
     padding: 20px;
     text-align: center;
     color: var(--box);
+}
+
+@media screen and (max-width:992px) {
+    .card {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 96%;
+        margin: 1%;
+    }
+    
 }
